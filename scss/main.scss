@@ -210,7 +210,7 @@ img {
 
   &-text {
     padding-bottom: 1rem;
-    max-width: 800px;
+    max-width: 600px;
   }
   &-link {
     color: skyblue;
@@ -220,8 +220,8 @@ img {
     &:after {
       content: '';
       position: absolute;
-      width: 400px;
-      height: 300px;
+      width: 500px;
+      height: 350px;
       border: 5px solid rgb(85, 214, 111);
       top: -20px;
       left: -25px;
@@ -243,8 +243,9 @@ img {
   }
   &-img {
     max-width: 600px;
-    max-height: 500 px;
+    max-height: 500px;
   }
+
   &-content2 {
     padding: 2rem;
     width: 100%;
@@ -254,28 +255,27 @@ img {
     position: relative;
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
   }
   &-col1 {
     margin-bottom: 1rem;
-    width: 100%;
-    flex-grow: 1;
   }
   &-col2 {
     position: relative;
+    width: 50%;
   }
 
   &-sidebar {
     margin-top: 2rem;
     border-radius: 30px;
-    transform: translateX(1200px);
+    max-height: 800px;
     max-width: 800px;
     transition: all 1s linear;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/pic-3.jpg') center/ cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('../img/bg.jpg') center/ cover no-repeat;
     overflow-x: hidden;
     &-link {
       color: rgb(84, 238, 184);
@@ -289,51 +289,18 @@ img {
 
   &-list-item {
     padding: 2rem 1rem;
+    width: 200px;
     border-bottom: 2px solid white;
     &:last-child {
       border: none;
     }
   }
 }
-// sidebar toggle
+// toggle-menu
 .toggle-menu {
-  padding: 2rem;
   display: none;
 }
-.toggle-menu:checked ~ .sectionA-sidebar {
-  transform: translateX(0);
-}
-.toggle-label {
-  position: absolute;
-  top: 0;
-  left: 80px;
-  width: 200px;
-  cursor: pointer;
-}
-.toggle-label div {
-  width: 50px;
-  height: 5px;
-  background: green;
-  border-radius: 100px;
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    background: green;
-    top: 10px;
-    border-radius: 100px;
-  }
-  &:after {
-    content: '';
-    top: 10px;
-  }
-  &:before {
-    content: '';
-    top: -10px;
-  }
-}
+
 // footer
 
 .footer {
@@ -350,7 +317,7 @@ img {
     text-align: center;
   }
   &-link {
-    color: rgb(151, 151, 233);
+    color: rgb(84, 238, 184);
     transition: $transition-all;
     &:hover {
       color: rgb(203, 203, 245);
@@ -361,7 +328,7 @@ img {
   }
   i {
     font-size: 3rem;
-    color: rgb(151, 151, 233);
+    color: rgb(84, 238, 184);
     padding: 2rem;
     transition: $transition-all;
     &:hover {

@@ -33,6 +33,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .sectionA-content2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .sectionA-img-container {
     margin-bottom: 1.5rem;
   }
@@ -43,6 +49,48 @@
   .sectionA-img-container:before {
     content: '';
     display: none;
+  }
+  .sectionA-sidebar {
+    -webkit-transform: translateX(1200px);
+            transform: translateX(1200px);
+  }
+  .toggle-menu {
+    padding: 2rem;
+    display: none;
+  }
+  .toggle-menu:checked ~ .sectionA-sidebar {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    cursor: pointer;
+  }
+  .toggle-label div {
+    width: 50px;
+    height: 5px;
+    background: green;
+    border-radius: 100px;
+  }
+  .toggle-label div:before, .toggle-label div:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: green;
+    top: 10px;
+    border-radius: 100px;
+  }
+  .toggle-label div:after {
+    content: '';
+    top: 10px;
+  }
+  .toggle-label div:before {
+    content: '';
+    top: -10px;
   }
 }
 
@@ -365,7 +413,7 @@ img {
 
 .sectionA-text {
   padding-bottom: 1rem;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .sectionA-link {
@@ -379,8 +427,8 @@ img {
 .sectionA-img-container:after {
   content: '';
   position: absolute;
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 350px;
   border: 5px solid #55d66f;
   top: -20px;
   left: -25px;
@@ -404,7 +452,7 @@ img {
 
 .sectionA-img {
   max-width: 600px;
-  max-height: 500 px;
+  max-height: 500px;
 }
 
 .sectionA-content2 {
@@ -418,13 +466,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -433,26 +477,22 @@ img {
 
 .sectionA-col1 {
   margin-bottom: 1rem;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .sectionA-col2 {
   position: relative;
+  width: 50%;
 }
 
 .sectionA-sidebar {
   margin-top: 2rem;
   border-radius: 30px;
-  -webkit-transform: translateX(1200px);
-          transform: translateX(1200px);
+  max-height: 800px;
   max-width: 800px;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/pic-3.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/pic-3.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg.jpg") center/cover no-repeat;
   overflow-x: hidden;
 }
 
@@ -469,6 +509,7 @@ img {
 
 .sectionA-list-item {
   padding: 2rem 1rem;
+  width: 200px;
   border-bottom: 2px solid white;
 }
 
@@ -477,48 +518,7 @@ img {
 }
 
 .toggle-menu {
-  padding: 2rem;
   display: none;
-}
-
-.toggle-menu:checked ~ .sectionA-sidebar {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.toggle-label {
-  position: absolute;
-  top: 0;
-  left: 80px;
-  width: 200px;
-  cursor: pointer;
-}
-
-.toggle-label div {
-  width: 50px;
-  height: 5px;
-  background: green;
-  border-radius: 100px;
-}
-
-.toggle-label div:before, .toggle-label div:after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 5px;
-  background: green;
-  top: 10px;
-  border-radius: 100px;
-}
-
-.toggle-label div:after {
-  content: '';
-  top: 10px;
-}
-
-.toggle-label div:before {
-  content: '';
-  top: -10px;
 }
 
 .footer {
@@ -539,7 +539,7 @@ img {
 }
 
 .footer-link {
-  color: #9797e9;
+  color: #54eeb8;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
 }
@@ -554,7 +554,7 @@ img {
 
 .footer i {
   font-size: 3rem;
-  color: #9797e9;
+  color: #54eeb8;
   padding: 2rem;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
