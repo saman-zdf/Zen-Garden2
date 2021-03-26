@@ -1,0 +1,37 @@
+@media (max-width: 992px) {
+  .header {
+    &-content {
+      margin-top: 10rem;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+  }
+  .section {
+    &-content {
+      flex-direction: column;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  .sectionA {
+    &-content {
+      flex-direction: column;
+    }
+    &-img-container {
+      &:after {
+        content: '';
+        display: none;
+      }
+      &:before {
+        content: '';
+        display: none;
+      }
+      margin-bottom: 1.5rem;
+    }
+  }
+}
