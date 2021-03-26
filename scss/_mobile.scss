@@ -36,8 +36,14 @@
       }
       margin-bottom: 1.5rem;
     }
+    &-col2 {
+      width: 100%;
+    }
     &-sidebar {
-      transform: translateX(1200px);
+      transform: translateX(900px);
+      a {
+        font-size: 0.9rem;
+      }
     }
   }
   // sidebar toggle

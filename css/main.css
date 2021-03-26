@@ -50,9 +50,15 @@
     content: '';
     display: none;
   }
+  .sectionA-col2 {
+    width: 100%;
+  }
   .sectionA-sidebar {
-    -webkit-transform: translateX(1200px);
-            transform: translateX(1200px);
+    -webkit-transform: translateX(900px);
+            transform: translateX(900px);
+  }
+  .sectionA-sidebar a {
+    font-size: 0.9rem;
   }
   .toggle-menu {
     padding: 2rem;
