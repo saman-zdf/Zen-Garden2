@@ -167,12 +167,14 @@ img {
   &-sidebar {
     color: rgb(36, 49, 42);
     li {
+      width: 100%;
       font-family: $ff-secondary;
-      padding: 0.5rem 1rem;
+      text-align: center;
       background: rgb(206, 206, 206);
-      border-radius: 20px;
+      padding: 0.5rem 1rem;
       margin-bottom: 0.4rem;
       margin-left: 0.5rem;
+      border-radius: 20px;
       &:last-child {
         border: none;
       }

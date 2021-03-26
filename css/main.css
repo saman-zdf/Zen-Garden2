@@ -367,12 +367,14 @@ img {
 }
 
 .section-sidebar li {
+  width: 100%;
   font-family: "Grand Hotel", cursive;
-  padding: 0.5rem 1rem;
+  text-align: center;
   background: #cecece;
-  border-radius: 20px;
+  padding: 0.5rem 1rem;
   margin-bottom: 0.4rem;
   margin-left: 0.5rem;
+  border-radius: 20px;
 }
 
 .section-sidebar li:last-child {
