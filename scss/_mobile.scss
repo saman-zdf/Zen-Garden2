@@ -36,6 +36,9 @@
       }
       margin-bottom: 1.5rem;
     }
+    &-col2 {
+      width: 300px;
+    }
 
     &-sidebar {
       transform: scale(0);
@@ -51,8 +54,8 @@
   }
   .toggle-label {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 650px;
+    left: 30px;
     width: 200px;
     cursor: pointer;
   }
