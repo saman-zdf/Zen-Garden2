@@ -41,10 +41,9 @@ img {
     height: 100%;
   }
   &-content {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @include flex-start;
     height: 100%;
+    padding-bottom: 3rem;
   }
   &-img-c {
     animation: scale 3s linear 1;
@@ -119,7 +118,7 @@ img {
     content: '';
     width: 300px;
     height: 800px;
-    background: green;
+    background: $bluesh-green-clr;
     position: absolute;
     top: 0;
     border-radius: 500px;
@@ -135,14 +134,12 @@ img {
     font-family: $ff-secondary;
     text-align: center;
     letter-spacing: 0.2rem;
-    color: rgb(20, 130, 110);
+    color: $bluesh-green-clr;
     margin: 2rem auto;
     max-width: 600px;
   }
   &-content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-s-evenly;
   }
 
   &-col1 {
@@ -153,7 +150,7 @@ img {
     margin-bottom: 2rem;
   }
   &-sup {
-    color: rgb(14, 182, 14);
+    margin-top: 0.5rem;
   }
   &-text {
     margin-bottom: 1rem;
@@ -183,10 +180,10 @@ img {
   .design-name,
   .designer-name {
     font-family: $ff-primary;
-    color: rgb(69, 142, 116);
+    color: $link-clr;
     transition: $transition-all;
     &:hover {
-      color: rgb(201, 235, 152);
+      color: $link-h-clr;
     }
   }
   .design-name {
@@ -199,9 +196,7 @@ img {
 .sectionA {
   &-content {
     padding: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-s-evenly;
   }
   &-desc1 {
     margin: 1rem;
@@ -215,7 +210,7 @@ img {
     max-width: 600px;
   }
   &-link {
-    color: skyblue;
+    color: $link-clr;
   }
   &-img-container {
     position: relative;
@@ -224,7 +219,7 @@ img {
       position: absolute;
       width: 500px;
       height: 350px;
-      border: 5px solid rgb(85, 214, 111);
+      border: 5px solid $light-green;
       top: -20px;
       left: -25px;
       z-index: -1;
@@ -236,11 +231,11 @@ img {
       right: -50px;
       width: 200px;
       height: 200px;
-      background: rgb(85, 214, 111);
+      background: $light-green;
       opacity: 0.2;
       border-radius: 50%;
       z-index: -1;
-      box-shadow: 2px 2px 15px rgb(85, 214, 111);
+      box-shadow: 2px 2px 15px $light-green;
     }
   }
   &-img {
@@ -256,11 +251,7 @@ img {
     color: #fff;
     position: relative;
     margin-top: 1rem;
-    display: flex;
-
-    justify-content: space-evenly;
-    align-items: center;
-    overflow-x: hidden;
+    @include flex-s-evenly;
   }
   &-col1 {
     margin-bottom: 1rem;
@@ -274,16 +265,16 @@ img {
     margin-top: 2rem;
     transition: all 0.3s linear;
     border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url('../img/bg.jpg') center/ cover no-repeat;
     overflow-x: hidden;
     &-link {
-      color: rgb(84, 238, 184);
+      color: $link-lighter-clr;
       transition: $transition-all;
       font-size: 1.2rem;
       &:hover {
         margin-left: 0.5rem;
-        color: rgb(203, 203, 245);
+        color: $link-lighter-h-clr;
       }
     }
   }
@@ -320,10 +311,10 @@ img {
     text-align: center;
   }
   &-link {
-    color: rgb(84, 238, 184);
+    color: $link-clr;
     transition: $transition-all;
     &:hover {
-      color: rgb(203, 203, 245);
+      color: $link-h-clr;
     }
   }
   &-icons {
@@ -331,11 +322,11 @@ img {
   }
   i {
     font-size: 3rem;
-    color: rgb(84, 238, 184);
+    color: $link-clr;
     padding: 2rem;
     transition: $transition-all;
     &:hover {
-      color: rgb(203, 203, 245);
+      color: $link-h-clr;
     }
   }
 }
