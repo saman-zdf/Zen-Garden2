@@ -36,14 +36,9 @@
       }
       margin-bottom: 1.5rem;
     }
-    &-col2 {
-      width: 100%;
-    }
+
     &-sidebar {
-      transform: translateX(900px);
-      a {
-        font-size: 0.9rem;
-      }
+      transform: scale(0);
     }
   }
   // sidebar toggle
@@ -52,7 +47,7 @@
     display: none;
   }
   .toggle-menu:checked ~ .sectionA-sidebar {
-    transform: translateX(0);
+    transform: scale(1);
   }
   .toggle-label {
     position: absolute;
